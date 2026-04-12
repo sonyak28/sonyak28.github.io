@@ -10,15 +10,13 @@ this project asks when imaging is actually warranted.
 
 ## The Problem
 
-Standard cloud detection fails over the Arctic because ice and snow surfaces
-are just as bright and cold as clouds — so we need a smarter approach.
-For TBI: only 0.9% of the 42,412 children in this dataset had a clinically
-important injury, but 35% received CT scans. The goal is to identify who
-actually needs one.
+Only 0.9% of the 42,412 children in this dataset had a clinically important
+injury, but 35% received CT scans — roughly 40 scans for every one serious
+injury found. The goal is to identify who actually needs imaging.
 
 ## What I Did
 
-- Cleaned 43,399 patient records using 80+ conditional validation rules,
+- Cleaned 43,399 patient records with 80+ conditional validation rules,
   handling clinical skip logic, special codes, and parent-child dependencies
 - Reproduced the exact 42,412-patient cohort from Kuppermann et al. (2009)
   as a reality check on the cleaning pipeline

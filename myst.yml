@@ -1,23 +1,15 @@
 version: 1
 project:
-  title: Sonya Kiskachi — Data Science Portfolio
+  title: Sonya Kiskachi
   authors:
     - name: Sonya Kiskachi
       affiliation: UC Berkeley, Statistics MA
   description: >
-    Statistical modeling and data analysis projects from
-    my master's program at UC Berkeley.
+    Data science portfolio — statistical modeling, machine learning,
+    and spatial analysis projects from my master's program at UC Berkeley.
 
 site:
   template: book-theme
   options:
     logo_text: Sonya Kiskachi
-  nav:
-    - title: Home
-      url: /
-    - title: Pediatric TBI
-      url: /tbi
-    - title: Arctic Cloud Detection
-      url: /clouds
-    - title: City Planning
-      url: /city
+    favicon: favicon.ico
