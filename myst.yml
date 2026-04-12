@@ -4,11 +4,14 @@ project:
   authors:
     - name: Sonya Kiskachi
       affiliation: UC Berkeley, Statistics MA
-  toc:
+  pages:
+    - file: index.md
     - file: tbi/index.md
+      slug: tbi
     - file: clouds/index.md
+      slug: clouds
     - file: city/index.md
-
+      slug: city
 site:
   template: book-theme
   options:
