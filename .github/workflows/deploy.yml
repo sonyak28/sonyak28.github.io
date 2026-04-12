@@ -1,4 +1,4 @@
-name: deploy-myst-site
+name: deploy-site
 on:
   push:
     branches: [main]
@@ -15,17 +15,10 @@ jobs:
       - uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-      - run: npm install -g mystmd
-      - run: myst build --html
-      - name: Copy custom homepage over MyST index
-        run: cp index.html _build/html/index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: _build/html
+          path: .
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
