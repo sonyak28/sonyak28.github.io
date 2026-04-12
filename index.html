@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonya Kiskachi</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #FDF8F5;
+      color: #2D2D2D;
+      min-height: 100vh;
+    }
+
+    nav {
+      background: #7C5CBF;
+      padding: 1rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .name {
+      font-family: 'DM Serif Display', serif;
+      color: white;
+      font-size: 1.2rem;
+      letter-spacing: 0.02em;
+    }
+
+    nav a {
+      color: rgba(255,255,255,0.85);
+      text-decoration: none;
+      margin-left: 2rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    nav a:hover { color: #F2C4CE; }
+
+    .hero {
+      max-width: 900px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: 1fr 190px;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    .hero-text h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2.8rem;
+      color: #2D2D2D;
+      line-height: 1.1;
+      margin-bottom: 0.5rem;
+    }
+
+    .tagline {
+      color: #7C5CBF;
+      font-weight: 500;
+      font-size: 0.95rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    .meta {
+      color: #666;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      line-height: 1.8;
+    }
+
+    .meta a { color: #7C5CBF; text-decoration: none; }
+    .meta a:hover { text-decoration: underline; }
+
+    .badges { margin: 1rem 0; display: flex; flex-wrap: wrap; gap: 6px; }
+    .badges img { height: 22px; }
+
+    .bio {
+      font-size: 0.95rem;
+      line-height: 1.75;
+      color: #444;
+      margin-top: 1.2rem;
+    }
+
+    .headshot {
+      display: flex;
+      justify-content: center;
+      padding-top: 0.5rem;
+    }
+
+    .headshot img {
+      width: 170px;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #F2C4CE;
+      box-shadow: 0 8px 30px rgba(124,92,191,0.2);
+    }
+
+    .divider {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 2rem;
+      border: none;
+      border-top: 1px solid #E8DFF5;
+    }
+
+    .projects {
+      max-width: 900px;
+      margin: 0 auto 4rem;
+      padding: 0 2rem;
+    }
+
+    .projects h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      color: #2D2D2D;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 16px;
+      padding: 1.8rem 2rem;
+      margin-bottom: 1.2rem;
+      border: 1px solid #EDE8F5;
+      box-shadow: 0 2px 12px rgba(124,92,191,0.07);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(124,92,191,0.15);
+    }
+
+    .project-card h3 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-card h3 a {
+      color: #2D2D2D;
+      text-decoration: none;
+    }
+
+    .project-card h3 a:hover { color: #7C5CBF; }
+
+    .project-card p {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: #555;
+      margin-bottom: 0.8rem;
+    }
+
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+
+    .tag {
+      background: #F0EAF9;
+      color: #7C5CBF;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 0.78rem;
+      font-weight: 500;
+    }
+
+    .ongoing {
+      background: #FFF0F3;
+      color: #C47A8A;
+      padding: 2px 8px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #999;
+      font-size: 0.8rem;
+      border-top: 1px solid #EDE8F5;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <span class="name">Sonya Kiskachi</span>
+  <div>
+    <a href="tbi/">Pediatric TBI</a>
+    <a href="clouds/">Arctic Cloud Detection</a>
+    <a href="city/">City Planning</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-text">
+    <h1>Sonya Kiskachi</h1>
+    <div class="tagline">Statistics · NLP · Geospatial · Machine Learning</div>
+    <div class="meta">
+      MS Statistics · UC Berkeley · Expected May 2026<br>
+      <a href="mailto:sonyak@berkeley.edu">sonyak@berkeley.edu</a> ·
+      <a href="https://www.linkedin.com/in/sonya-kiskachi/">LinkedIn</a> ·
+      <a href="https://github.com/sonyak28">GitHub</a>
+    </div>
+    <div class="badges">
+      <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white">
+      <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white">
+      <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white">
+      <img src="https://img.shields.io/badge/SQL-4479A1?style=flat&logo=mysql&logoColor=white">
+      <img src="https://img.shields.io/badge/GeoPandas-139C5A?style=flat&logo=python&logoColor=white">
+      <img src="https://img.shields.io/badge/Tableau-E97627?style=flat&logo=tableau&logoColor=white">
+    </div>
+    <div class="bio">
+      I am a statistician and data scientist with experience across industry and
+      research. Before my master's, I spent two years at Wells Fargo as a Data
+      Scientist and NLP Engineer, building fraud detection pipelines, topic models
+      for customer complaint analysis, and company-wide sentiment dashboards.
+      Prior to that I interned at Apple on software quality and anomaly detection.
+      <br><br>
+      My academic work spans clinical machine learning, satellite remote sensing,
+      and urban equity analysis. I am drawn to problems where the stakes are real —
+      reducing unnecessary radiation in pediatric emergency care, improving cloud
+      detection for Arctic climate models, or measuring amenity access for
+      transit-dependent communities in the Bay Area.
+      <br><br>
+      I hold a BA in Data Science with a Geospatial Science emphasis from UC
+      Berkeley (2023), where I also served as Lead Undergraduate Student Instructor
+      for Foundations of Data Science, the largest course in UC history.
+    </div>
+  </div>
+  <div class="headshot">
+    <img src="headshot.jpg" alt="Sonya Kiskachi">
+  </div>
+</div>
+
+<hr class="divider">
+
+<div class="projects">
+  <h2>Projects</h2>
+
+  <div class="project-card">
+    <h3><a href="tbi/">Pediatric TBI Data Analysis</a></h3>
+    <p>Cleaned 43,399 clinical records and built classifiers to improve CT scan
+    decision rules for children with head trauma. Decision tree achieved 97.1%
+    sensitivity at less than half the scan rate of the clinical standard.</p>
+    <div class="tags">
+      <span class="tag">Python</span>
+      <span class="tag">scikit-learn</span>
+      <span class="tag">pandas</span>
+      <span class="tag">STAT 214</span>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <h3><a href="clouds/">Arctic Cloud Detection</a></h3>
+    <p>Detected clouds in polar satellite imagery where standard methods fail,
+    using transfer learning from 161 unlabeled images. XGBoost + autoencoder
+    embeddings reached AUC 0.990 vs. the paper benchmark's 91.8% accuracy.</p>
+    <div class="tags">
+      <span class="tag">Python</span>
+      <span class="tag">PyTorch</span>
+      <span class="tag">XGBoost</span>
+      <span class="tag">STAT 214</span>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <h3>
+      <a href="city/">Bay Area Transit Equity Analysis</a>
+      <span class="ongoing">ongoing</span>
+    </h3>
+    <p>Analyzing amenity access disparities at BART and Caltrain stations,
+    examining whether peripheral stations underserve transit-dependent
+    communities using permutation tests, Gini coefficients, and spatial analysis.</p>
+    <div class="tags">
+      <span class="tag">Python</span>
+      <span class="tag">geopandas</span>
+      <span class="tag">Census API</span>
+      <span class="tag">City Planning 255</span>
+    </div>
+  </div>
+</div>
+
+<footer>
+  © 2026 Sonya Kiskachi · Built with MyST & GitHub Pages
+</footer>
+
+</body>
+</html>
