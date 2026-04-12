@@ -19,3 +19,9 @@ site:
       url: /clouds
     - title: City Planning
       url: /city
+
+site:
+  template: book-theme
+  options:
+    favicon: favicon.ico
+    logo_text: Sonya Kiskachi
