@@ -4,20 +4,10 @@ project:
   authors:
     - name: Sonya Kiskachi
       affiliation: UC Berkeley, Statistics MA
-  description: >
-    Data science portfolio — statistical modeling, machine learning,
-    and spatial analysis projects from my master's program at UC Berkeley.
   toc:
-    - file: README.md
-    - title: Pediatric TBI
-      children:
-        - file: tbi/index.md
-    - title: Arctic Cloud Detection
-      children:
-        - file: clouds/index.md
-    - title: City Planning
-      children:
-        - file: city/index.md
+    - file: tbi/index.md
+    - file: clouds/index.md
+    - file: city/index.md
 
 site:
   template: book-theme
