@@ -1,0 +1,25 @@
+:root {
+  --color-primary: #9B7FBD;
+  --color-primary-dark: #7A5FA0;
+}
+
+.headshot img {
+  border-radius: 50% !important;
+  border: 3px solid #9B7FBD !important;
+  float: right;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  width: 150px;
+}
+
+.bd-sidebar-primary {
+  background: linear-gradient(160deg, #F5F0FA, #FAF0F5) !important;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #7A5FA0, #B07BA8) !important;
+}
+
+a {
+  color: #9B7FBD !important;
+}

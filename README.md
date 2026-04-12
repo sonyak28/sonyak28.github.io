@@ -1,8 +1,19 @@
 # Sonya Kiskachi
 
-**MS Statistics · UC Berkeley · Expected May 2026**
+**Statistics · NLP · Geospatial · Machine Learning**
+
+MS Statistics · UC Berkeley · Expected May 2026
 
 sonyak@berkeley.edu · [LinkedIn](https://www.linkedin.com/in/sonya-kiskachi/) · [GitHub](https://github.com/sonyak28)
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=mysql&logoColor=white)
+![GeoPandas](https://img.shields.io/badge/GeoPandas-139C5A?style=flat&logo=python&logoColor=white)
+![Tableau](https://img.shields.io/badge/Tableau-E97627?style=flat&logo=tableau&logoColor=white)
+
+![Sonya Kiskachi](headshot.jpg){w=140px align=right}
 
 I am a statistician and data scientist with experience across industry and
 research. Before my master's, I spent two years at Wells Fargo as a Data
