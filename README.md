@@ -47,7 +47,7 @@ in the Bay Area.
 Applying proportional rescaling to combine an LSTM daily streamflow model with
 a trusted monthly hydrological baseline, improving streamflow estimates across
 ~155,000 California stream segments.
-`Python` `PyTorch` `Hydrology` `Time Series`
+`Python` `PyTorch` `Hydrology` `Time Series` · [Project Dashboard](https://sonyak28.github.io/tnc-streamflow/)
 
 ---
 
