@@ -35,8 +35,17 @@
 
     .divider { max-width: 900px; margin: 2rem auto; padding: 0 2rem; border: none; border-top: 1px solid #D8DDD4; }
 
-    .projects { max-width: 900px; margin: 0 auto 4rem; padding: 0 2rem; }
-    .projects h2 { font-family: 'DM Serif Display', serif; font-size: 1.8rem; margin-bottom: 2rem; color: #2D2020; }
+    .section { max-width: 900px; margin: 0 auto 3rem; padding: 0 2rem; }
+    .section h2 { font-family: 'DM Serif Display', serif; font-size: 1.8rem; margin-bottom: 2rem; color: #2D2020; }
+
+    .exp-card { background: white; border-radius: 16px; padding: 1.5rem 2rem; margin-bottom: 1rem; border: 1px solid #DDE3D8; box-shadow: 0 2px 12px rgba(61,79,60,0.06); }
+    .exp-card .exp-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.4rem; flex-wrap: wrap; gap: 0.5rem; }
+    .exp-card .exp-org { font-family: 'DM Serif Display', serif; font-size: 1.1rem; color: #2D2020; }
+    .exp-card .exp-org a { color: #2D2020; text-decoration: none; }
+    .exp-card .exp-org a:hover { color: #5C4A2A; }
+    .exp-card .exp-role { font-size: 0.88rem; color: #5C4A2A; font-weight: 500; margin-bottom: 0.5rem; }
+    .exp-card .exp-period { font-size: 0.82rem; color: #999; white-space: nowrap; }
+    .exp-card p { font-size: 0.9rem; line-height: 1.6; color: #555; margin-bottom: 0.8rem; }
 
     .project-card { background: white; border-radius: 16px; padding: 1.8rem 2rem; margin-bottom: 1.2rem; border: 1px solid #DDE3D8; box-shadow: 0 2px 12px rgba(61,79,60,0.06); transition: transform 0.2s, box-shadow 0.2s; }
     .project-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(61,79,60,0.12); }
@@ -45,12 +54,14 @@
     .project-card h3 a:hover { color: #5C4A2A; }
     .project-card p { font-size: 0.9rem; line-height: 1.6; color: #555; margin-bottom: 0.8rem; }
 
-    .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
     .tag { background: #EEF2EB; color: #5C4A2A; padding: 3px 10px; border-radius: 20px; font-size: 0.78rem; font-weight: 500; }
+    .tag-link { background: #EEF2EB; color: #5C4A2A; padding: 3px 10px; border-radius: 20px; font-size: 0.78rem; font-weight: 500; text-decoration: none; border: 1px solid #C8D4C0; }
+    .tag-link:hover { background: #DDE8D8; }
     .ongoing { background: #F5F0E8; color: #7A6040; padding: 2px 8px; border-radius: 20px; font-size: 0.75rem; font-weight: 500; margin-left: 6px; vertical-align: middle; }
 
     footer { text-align: center; padding: 2rem; color: #999; font-size: 0.8rem; border-top: 1px solid #D8DDD4; }
-  
+
     body::before {
       content: "";
       position: fixed;
@@ -63,7 +74,6 @@
       pointer-events: none;
       z-index: 0;
     }
-
   </style>
 </head>
 <body>
@@ -82,7 +92,7 @@
     <h1>Sonya Kiskachi</h1>
     <div class="tagline">Statistics · NLP · Geospatial · Machine Learning</div>
     <div class="meta">
-      MS Statistics · UC Berkeley · Expected May 2026<br>
+      MS Statistics · UC Berkeley · May 2026<br>
       <a href="mailto:sonyak@berkeley.edu">sonyak@berkeley.edu</a> ·
       <a href="https://www.linkedin.com/in/sonya-kiskachi/">LinkedIn</a> ·
       <a href="https://github.com/sonyak28">GitHub</a>
@@ -97,20 +107,23 @@
     </div>
     <div class="bio">
       I am a statistician and data scientist with experience across industry and
-      research. Before my master's, I spent two years at Wells Fargo as a Data
-      Scientist and NLP Engineer, building fraud detection pipelines, topic models
-      for customer complaint analysis, and company-wide sentiment dashboards.
-      Prior to that I interned at Apple on software quality and anomaly detection.
+      research. I recently completed my MS in Statistics at UC Berkeley and am
+      currently a research collaborator at The Nature Conservancy California,
+      applying deep learning and statistical post-processing to improve daily
+      streamflow estimates across California's stream network.
       <br><br>
-      My academic work spans clinical machine learning, satellite remote sensing,
-      and urban equity analysis. I am drawn to problems where the stakes are real —
-      reducing unnecessary radiation in pediatric emergency care, improving cloud
-      detection for Arctic climate models, or measuring amenity access for
-      transit-dependent communities in the Bay Area.
+      Before my master's, I spent two years at Wells Fargo as a Data Scientist
+      and NLP Engineer, building fraud detection pipelines, topic models for
+      customer complaint analysis, and company-wide sentiment dashboards. Prior
+      to that I interned at Apple on software quality and anomaly detection.
       <br><br>
       I hold a BA in Data Science with a Geospatial Science emphasis from UC
-      Berkeley (2023), where I also served as Lead Undergraduate Student Instructor
-      for Foundations of Data Science, the largest course in UC history.
+      Berkeley (2023), where I also served as Lead Undergraduate Student
+      Instructor for Foundations of Data Science, the largest course in UC
+      history. I am drawn to problems where the stakes are real — whether that
+      is understanding how water moves through a landscape, reducing unnecessary
+      radiation in pediatric emergency care, or measuring amenity access for
+      transit-dependent communities in the Bay Area.
     </div>
   </div>
   <div class="headshot">
@@ -120,7 +133,59 @@
 
 <hr class="divider">
 
-<div class="projects">
+<div class="section">
+  <h2>Experience</h2>
+
+  <div class="exp-card">
+    <div class="exp-header">
+      <span class="exp-org">The Nature Conservancy California</span>
+      <span class="exp-period">Summer 2026</span>
+    </div>
+    <div class="exp-role">Data Science Research Collaborator</div>
+    <p>Applying proportional rescaling to combine an LSTM daily streamflow model
+    with a trusted monthly hydrological baseline, improving flow estimates across
+    ~155,000 California stream segments.</p>
+    <div class="tags">
+      <span class="tag">Python</span><span class="tag">PyTorch</span>
+      <span class="tag">Hydrology</span><span class="tag">Time Series</span>
+      <a href="https://sonyak28.github.io/tnc-streamflow/" class="tag-link">Project Dashboard ↗</a>
+    </div>
+  </div>
+
+  <div class="exp-card">
+    <div class="exp-header">
+      <span class="exp-org">Wells Fargo</span>
+      <span class="exp-period">Jul 2023 – Jul 2025</span>
+    </div>
+    <div class="exp-role">Data Scientist &amp; NLP Engineer</div>
+    <p>Built production NLP pipelines (FLAN-T5, BERT) for customer transcript
+    classification, automated compliance control reporting, and reduced frontline
+    QC workload by 70%.</p>
+    <div class="tags">
+      <span class="tag">Python</span><span class="tag">BERT</span>
+      <span class="tag">FLAN-T5</span><span class="tag">Snowflake</span><span class="tag">SQL</span>
+    </div>
+  </div>
+
+  <div class="exp-card">
+    <div class="exp-header">
+      <span class="exp-org">Apple</span>
+      <span class="exp-period">Summer 2022</span>
+    </div>
+    <div class="exp-role">Machine Learning Intern</div>
+    <p>Applied anomaly detection and k-means clustering to improve internal bug
+    discovery tooling; built custom KPIs to quantify test coverage across software
+    quality pipelines.</p>
+    <div class="tags">
+      <span class="tag">Python</span><span class="tag">scikit-learn</span>
+      <span class="tag">Anomaly Detection</span>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<div class="section">
   <h2>Projects</h2>
 
   <div class="project-card">
@@ -146,13 +211,10 @@
   </div>
 
   <div class="project-card">
-    <h3>
-      <a href="city/">Bay Area Transit Equity Analysis</a>
-      <span class="ongoing">ongoing</span>
-    </h3>
-    <p>Analyzing amenity access disparities at BART and Caltrain stations,
-    examining whether peripheral stations underserve transit-dependent
-    communities using permutation tests, Gini coefficients, and spatial analysis.</p>
+    <h3><a href="city/">Bay Area Transit Equity Analysis</a></h3>
+    <p>Analyzed amenity access disparities at 79 BART and Caltrain stations,
+    examining whether peripheral stations underserve transit-dependent communities
+    using permutation tests, Gini coefficients, and spatial analysis.</p>
     <div class="tags">
       <span class="tag">Python</span><span class="tag">geopandas</span>
       <span class="tag">Census API</span><span class="tag">CP 255</span>
