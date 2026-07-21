@@ -6,6 +6,8 @@ project:
       affiliation: UC Berkeley, Statistics MA
   pages:
     - file: index.md
+    - file: fmri/index.md
+      slug: fmri
     - file: tbi/index.md
       slug: tbi
     - file: clouds/index.md

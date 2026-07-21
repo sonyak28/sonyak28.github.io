@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LLM Based fMRI Brain Encoding · Sonya Kiskachi</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'DM Sans', sans-serif; background: #F7F9F6; color: #1E2420; min-height: 100vh; }
+    nav { background: #3D4F3C; padding: 1rem 3rem; display: flex; justify-content: space-between; align-items: center; }
+    nav .name { font-family: 'DM Serif Display', serif; color: white; font-size: 1.2rem; }
+    nav a { color: rgba(255,255,255,0.85); text-decoration: none; margin-left: 2rem; font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
+    nav a:hover { color: #D4B896; }
+    .container { max-width: 780px; margin: 3rem auto 5rem; padding: 0 2rem; }
+    .back { display: inline-block; color: #5C4A2A; text-decoration: none; font-size: 0.875rem; font-weight: 500; margin-bottom: 2rem; }
+    .back:hover { text-decoration: underline; }
+    .meta-line { color: #888; font-size: 0.85rem; margin-bottom: 2rem; }
+    h1 { font-family: 'DM Serif Display', serif; font-size: 2.2rem; color: #1E2420; margin-bottom: 0.5rem; line-height: 1.2; }
+    h2 { font-family: 'DM Serif Display', serif; font-size: 1.3rem; color: #1E2420; margin: 2.2rem 0 0.8rem; }
+    p { font-size: 0.95rem; line-height: 1.75; color: #444; margin-bottom: 0.8rem; }
+    ul { padding-left: 1.4rem; margin-bottom: 0.8rem; }
+    ul li { font-size: 0.95rem; line-height: 1.75; color: #444; margin-bottom: 0.3rem; }
+    .tools { display: flex; flex-wrap: wrap; gap: 6px; margin: 0.8rem 0 1.5rem; }
+    .tool { background: #EEF2EB; color: #5C4A2A; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 500; }
+    .gh-link { display: inline-block; margin-top: 2rem; background: #3D4F3C; color: white; padding: 0.6rem 1.4rem; border-radius: 8px; text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: background 0.2s; }
+    .gh-link:hover { background: #2d3d2c; }
+    footer { text-align: center; padding: 2rem; color: #999; font-size: 0.8rem; border-top: 1px solid #D8DDD4; }
+  </style>
+</head>
+<body>
+<nav>
+  <span class="name"><a href="../" style="color:white;text-decoration:none;">Sonya Kiskachi</a></span>
+  <div>
+    <a href="../tbi/">Pediatric TBI</a>
+    <a href="../clouds/">Arctic Cloud Detection</a>
+    <a href="../city/">City Planning</a>
+    <a href="../fmri/">fMRI Brain Encoding</a>
+  </div>
+</nav>
+<div class="container">
+  <a class="back" href="../">← Back</a>
+  <h1>LLM Based fMRI Brain Encoding</h1>
+  <div class="meta-line">Statistics 214, Spring 2026 · UC Berkeley · Group project with Maddie MacDonald, Candace, and Oli</div>
+
+  <p>A language model pipeline that maps stimulus text to fMRI brain activity, built to test how well transformer based text embeddings predict neural response during naturalistic language processing.</p>
+
+  <h2>What We Did</h2>
+  <ul>
+    <li>Built a language model pipeline using BERT variants to tokenize and embed stimulus text into fixed dimensional representations</li>
+    <li>Mapped learned embeddings to fMRI voxel activity to build an encoding model of brain response to language</li>
+    <li>Fine tuned models with LoRA to adapt embeddings efficiently on the Bridges2 HPC cluster</li>
+    <li>Evaluated model interpretability using SHAP and LIME, and assessed data quality of embeddings and model outputs at each stage of the pipeline</li>
+  </ul>
+
+  <h2>Tools</h2>
+  <div class="tools">
+    <span class="tool">Python</span><span class="tool">PyTorch</span>
+    <span class="tool">BERT</span><span class="tool">LoRA</span>
+    <span class="tool">SHAP</span><span class="tool">LIME</span>
+    <span class="tool">Bridges2 HPC</span>
+  </div>
+
+  <a class="gh-link" href="https://github.com/sonyak28/lab-3-group-14" target="_blank">View Code on GitHub →</a>
+</div>
+<footer>© 2026 Sonya Kiskachi</footer>
+</body>
+</html>
