@@ -69,6 +69,15 @@ software quality pipelines.
 
 ## Projects
 
+**[LLM Based fMRI Brain Encoding](fmri/index.md)**
+Built a language model pipeline using BERT variants to tokenize and embed
+stimulus text, mapping embeddings to fMRI brain activity for encoding
+prediction. Fine tuned with LoRA and evaluated interpretability and data
+quality using SHAP and LIME.
+`Python` `PyTorch` `BERT` `LoRA`
+
+---
+
 **[Pediatric TBI Data Analysis](tbi/index.md)**
 Cleaned 43,399 clinical records and built classifiers to improve CT scan
 decision rules for children with head trauma. Decision tree achieved 97.1%
