@@ -2,7 +2,7 @@
 
 **Statistics · NLP · Geospatial · Machine Learning**
 
-MS Statistics · UC Berkeley · May 2026
+MA Statistics · UC Berkeley · May 2026
 
 [sonyak@berkeley.edu](mailto:sonyak@berkeley.edu) · [LinkedIn](https://www.linkedin.com/in/sonya-kiskachi/) · [GitHub](https://github.com/sonyak28)
 
@@ -20,7 +20,7 @@ MS Statistics · UC Berkeley · May 2026
 ```
 
 I am a statistician and data scientist with experience across industry and
-research. I recently completed my MS in Statistics at UC Berkeley, where my
+research. I recently completed my MA in Statistics at UC Berkeley, where my
 work spanned clinical machine learning, satellite remote sensing, and urban
 equity analysis. I am currently a research collaborator at The Nature
 Conservancy California, applying deep learning and statistical post-processing
